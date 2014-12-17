@@ -29,14 +29,14 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="NavigatorPluginSampleActionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="NavigatorPluginSampleActionDataSet" msprop:Generator_DataSetName="NavigatorPluginSampleActionDataSet" msprop:EnableTableAdapterManager="true">
+  <xs:element name="NavigatorPluginSampleActionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="NavigatorPluginSampleActionDataSet" msprop:Generator_UserDSName="NavigatorPluginSampleActionDataSet" msprop:EnableTableAdapterManager="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TaxYear" msprop:Generator_UserTableName="TaxYear" msprop:Generator_RowDeletedName="TaxYearRowDeleted" msprop:Generator_RowChangedName="TaxYearRowChanged" msprop:Generator_RowClassName="TaxYearRow" msprop:Generator_RowChangingName="TaxYearRowChanging" msprop:Generator_RowEvArgName="TaxYearRowChangeEvent" msprop:Generator_RowEvHandlerName="TaxYearRowChangeEventHandler" msprop:Generator_TableClassName="TaxYearDataTable" msprop:Generator_TableVarName="tableTaxYear" msprop:Generator_RowDeletingName="TaxYearRowDeleting" msprop:Generator_TablePropName="TaxYear">
+        <xs:element name="TaxYear" msprop:Generator_UserTableName="TaxYear" msprop:Generator_RowDeletedName="TaxYearRowDeleted" msprop:Generator_TableClassName="TaxYearDataTable" msprop:Generator_RowChangedName="TaxYearRowChanged" msprop:Generator_RowClassName="TaxYearRow" msprop:Generator_RowChangingName="TaxYearRowChanging" msprop:Generator_RowEvArgName="TaxYearRowChangeEvent" msprop:Generator_RowEvHandlerName="TaxYearRowChangeEventHandler" msprop:Generator_TablePropName="TaxYear" msprop:Generator_TableVarName="tableTaxYear" msprop:Generator_RowDeletingName="TaxYearRowDeleting">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
-              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />

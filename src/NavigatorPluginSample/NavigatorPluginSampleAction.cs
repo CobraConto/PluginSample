@@ -48,5 +48,16 @@ namespace NavigatorPluginSample
             //Üzenhetünk a felhasználónak
             Cobra.Base.CMessageBox.Success();
         }
+
+		private void NavigatorPluginSampleAction_Load(object sender, EventArgs e)
+		{
+			// TODO: This line of code loads data into the 'navigatorPluginSampleActionDataSet.TaxYear' table. You can move, or remove it, as needed.
+			this.taxYearTableAdapter.Fill(this.navigatorPluginSampleActionDataSet.TaxYear);
+			// TODO: This line of code loads data into the 'navigatorPluginSampleActionDataSet.TaxYear' table. You can move, or remove it, as needed.
+			this.taxYearTableAdapter.Fill(this.navigatorPluginSampleActionDataSet.TaxYear);
+			// TODO: This line of code loads data into the 'navigatorPluginSampleActionDataSet.TaxYear' table. You can move, or remove it, as needed.
+			this.taxYearTableAdapter.Fill(this.navigatorPluginSampleActionDataSet.TaxYear);
+
+		}
     }
 }
