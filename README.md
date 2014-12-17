@@ -1,2 +1,1 @@
-PuginSample
-===========
+CobraConto.Net plugin useage samples

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D41CEAD-FDBE-4B28-B890-ADAE385D2537}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NavigatorPluginSample</RootNamespace>
+    <AssemblyName>NavigatorPluginSample</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\MyKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\AnyCPU\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Release\AnyCPU\Plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Release\X64\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>..\..\Release\X64\Plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Cobra.Base, Version=1.0.5137.37220, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Conto.Data, Version=1.0.5137.37222, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Conto.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Conto.Firm, Version=1.0.5184.18723, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Conto.Firm.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Conto.Plugin, Version=1.0.5015.17178, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Conto.Plugin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Conto.Product, Version=1.0.5184.18731, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Conto.Product.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Conto.Util, Version=1.0.5184.18717, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Conto.Util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Custom, Version=1.0.5137.37219, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Custom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Db, Version=1.0.5137.37215, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Db.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Profile, Version=1.0.5137.37218, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Profile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cobra.Util, Version=1.0.5137.37217, Culture=neutral, PublicKeyToken=3ebf712636f37499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\$(Platform)\Cobra.Util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LocalText.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NavigatorPluginSample.cs" />
+    <Compile Include="NavigatorPluginCommandSample.cs" />
+    <Compile Include="NavigatorPluginSampleAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavigatorPluginSampleAction.Designer.cs">
+      <DependentUpon>NavigatorPluginSampleAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigatorPluginSampleActionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigatorPluginSampleActionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalText.en.resx" />
+    <EmbeddedResource Include="LocalText.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalText.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigatorPluginSampleAction.resx">
+      <DependentUpon>NavigatorPluginSampleAction.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="NavigatorPluginSampleActionDataSet.xsc">
+      <DependentUpon>NavigatorPluginSampleActionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NavigatorPluginSampleActionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NavigatorPluginSampleActionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NavigatorPluginSampleActionDataSet.xss">
+      <DependentUpon>NavigatorPluginSampleActionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
